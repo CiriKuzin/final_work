@@ -9,7 +9,7 @@ System.Console.WriteLine();
 
 System.Console.WriteLine("Начальный массив:");
 int size = 0;
-for (int i = 0; i < stringArray.Length; i++)
+for (int i = 0; i < stringArray.Length; i++) // Определение размера будущего массива
 {
     System.Console.Write($"'{stringArray[i]}'\t");
     if (stringArray[i].Length <= 3)
@@ -23,7 +23,7 @@ System.Console.WriteLine();
 string[] newStringArray = new string[size];
 size = 0;
 System.Console.WriteLine("Результат фильтрации:");
-for (int i = 0; i < stringArray.Length; i++)
+for (int i = 0; i < stringArray.Length; i++) // Заполнение нового массива отфильтрованными значениями
 {
     if (stringArray[i].Length <= 3)
     {
